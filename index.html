@@ -3,1209 +3,624 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Box Calf Leather — A Complete Guide</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<title>Box Calf Leather — The Definitive Characteristics Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #1a1209;
-    --parchment: #f5efe4;
-    --tan: #c8a96e;
-    --tan-dark: #9b7a42;
-    --tan-light: #e8d5b0;
-    --warm-white: #faf7f2;
-    --brown-mid: #5c3d1e;
-    --accent-red: #8b2a2a;
-    --shadow: rgba(26,18,9,0.15);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--warm-white);
-    color: var(--ink);
-    font-family: 'Libre Baskerville', serif;
-    overflow-x: hidden;
-  }
-
-  /* ── HERO ── */
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 2rem;
-    background: var(--ink);
-    overflow: hidden;
-  }
-
-  .hero-texture {
-    position: absolute; inset: 0;
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(200,169,110,0.03) 60px, rgba(200,169,110,0.03) 61px),
-      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(200,169,110,0.03) 60px, rgba(200,169,110,0.03) 61px);
-  }
-
-  .hero-glow {
-    position: absolute;
-    width: 600px; height: 600px;
-    background: radial-gradient(ellipse, rgba(200,169,110,0.12) 0%, transparent 70%);
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    animation: pulse 6s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 0.6; transform: translate(-50%,-50%) scale(1); }
-    50% { opacity: 1; transform: translate(-50%,-50%) scale(1.1); }
-  }
-
-  .hero-label {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    font-size: 0.72rem;
-    color: var(--tan);
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeUp 1s 0.3s forwards;
-  }
-
-  .hero-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(3.5rem, 9vw, 8rem);
-    line-height: 0.95;
-    color: var(--parchment);
-    letter-spacing: -0.02em;
-    opacity: 0;
-    animation: fadeUp 1s 0.5s forwards;
-  }
-
-  .hero-title em {
-    font-style: italic;
-    color: var(--tan);
-  }
-
-  .hero-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: 1.25rem;
-    color: rgba(245,239,228,0.55);
-    margin-top: 1.5rem;
-    max-width: 480px;
-    line-height: 1.7;
-    opacity: 0;
-    animation: fadeUp 1s 0.7s forwards;
-  }
-
-  .hero-divider {
-    width: 1px;
-    height: 80px;
-    background: linear-gradient(to bottom, transparent, var(--tan), transparent);
-    margin: 3rem auto 0;
-    opacity: 0;
-    animation: fadeUp 1s 0.9s forwards;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ── NAV DOTS ── */
-  .nav-dots {
-    position: fixed;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    z-index: 100;
-  }
-
-  .nav-dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: rgba(26,18,9,0.2);
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .nav-dot.active {
-    background: var(--tan-dark);
-    transform: scale(1.5);
-  }
-
-  /* ── SECTIONS ── */
-  section {
-    padding: 6rem 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    font-size: 0.68rem;
-    color: var(--tan-dark);
-    margin-bottom: 1rem;
-  }
-
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    line-height: 1.1;
-    color: var(--ink);
-    margin-bottom: 2.5rem;
-  }
-
-  .section-title em { font-style: italic; color: var(--tan-dark); }
-
-  .body-text {
-    font-size: 1.05rem;
-    line-height: 1.9;
-    color: #3a2c1e;
-    max-width: 680px;
-  }
-
-  /* ── DIVIDER LINE ── */
-  .line-divider {
-    border: none;
-    border-top: 1px solid var(--tan-light);
-    margin: 0;
-  }
-
-  /* ── ORIGIN SECTION ── */
-  .origin-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-  }
-
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 1rem;
-  }
-
-  .timeline-item {
-    display: flex;
-    gap: 1.25rem;
-    align-items: flex-start;
-    padding-bottom: 2rem;
-    position: relative;
-  }
-
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 18px;
-    top: 36px;
-    bottom: 0;
-    width: 1px;
-    background: var(--tan-light);
-  }
-
-  .timeline-item:last-child::before { display: none; }
-
-  .timeline-dot {
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    background: var(--parchment);
-    border: 1.5px solid var(--tan);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--tan-dark);
-    letter-spacing: -0.02em;
-  }
-
-  .timeline-content h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    color: var(--ink);
-    margin-bottom: 0.3rem;
-  }
-
-  .timeline-content p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.875rem;
-    color: #6b4e2e;
-    line-height: 1.6;
-  }
-
-  /* ── CHARACTERISTICS CARDS ── */
-  .char-bg {
-    background: var(--ink);
-    padding: 6rem 0;
-    margin: 0;
-  }
-
-  .char-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  .char-bg .section-label { color: var(--tan); }
-  .char-bg .section-title { color: var(--parchment); }
-
-  .char-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5px;
-    margin-top: 3rem;
-    background: rgba(200,169,110,0.15);
-  }
-
-  .char-card {
-    background: #201608;
-    padding: 2.5rem 2rem;
-    position: relative;
-    overflow: hidden;
-    transition: background 0.4s;
-    cursor: default;
-  }
-
-  .char-card:hover {
-    background: #2a1c0a;
-  }
-
-  .char-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 3px;
-    height: 0;
-    background: var(--tan);
-    transition: height 0.4s ease;
-  }
-
-  .char-card:hover::before { height: 100%; }
-
-  .char-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: rgba(200,169,110,0.15);
-    line-height: 1;
-    margin-bottom: 1rem;
-    transition: color 0.4s;
-  }
-
-  .char-card:hover .char-number {
-    color: rgba(200,169,110,0.3);
-  }
-
-  .char-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: var(--tan-light);
-    margin-bottom: 0.75rem;
-  }
-
-  .char-desc {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.875rem;
-    color: rgba(245,239,228,0.55);
-    line-height: 1.7;
-  }
-
-  /* ── TANNERIES SECTION ── */
-  .tannery-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-
-  .tannery-card {
-    border: 1px solid var(--tan-light);
-    padding: 2.5rem 2rem;
-    position: relative;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    background: white;
-  }
-
-  .tannery-card:hover {
-    border-color: var(--tan);
-    box-shadow: 0 8px 40px var(--shadow);
-  }
-
-  .tannery-flag {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    font-size: 0.65rem;
-    color: var(--tan-dark);
-    margin-bottom: 0.75rem;
-  }
-
-  .tannery-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 0.4rem;
-    line-height: 1.2;
-  }
-
-  .tannery-founded {
-    font-family: 'Jost', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 300;
-    color: var(--tan-dark);
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.05em;
-  }
-
-  .tannery-desc {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.875rem;
-    color: #5a3d22;
-    line-height: 1.7;
-  }
-
-  .tannery-badge {
-    display: inline-block;
-    margin-top: 1.25rem;
-    padding: 0.3rem 0.85rem;
-    background: var(--parchment);
-    border: 1px solid var(--tan-light);
-    font-family: 'Jost', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 400;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--tan-dark);
-  }
-
-  /* ── PRODUCTION PROCESS ── */
-  .process-bg {
-    background: var(--parchment);
-    padding: 6rem 0;
-  }
-
-  .process-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  .process-steps {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0;
-    margin-top: 3.5rem;
-    position: relative;
-  }
-
-  .process-steps::before {
-    content: '';
-    position: absolute;
-    top: 28px;
-    left: 10%;
-    right: 10%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, var(--tan), var(--tan), transparent);
-  }
-
-  .process-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 0.75rem;
-  }
-
-  .step-circle {
-    width: 56px; height: 56px;
-    border-radius: 50%;
-    background: var(--ink);
-    color: var(--tan);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s, background 0.3s;
-  }
-
-  .process-step:hover .step-circle {
-    transform: scale(1.1);
-    background: var(--tan-dark);
-  }
-
-  .step-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 0.5rem;
-  }
-
-  .step-desc {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.78rem;
-    color: #6b4e2e;
-    line-height: 1.6;
-  }
-
-  /* ── LUXURY BRANDS SECTION ── */
-  .brands-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--tan-light);
-    margin-top: 3rem;
-  }
-
-  .brand-item {
-    background: var(--warm-white);
-    padding: 2rem 2.5rem;
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    transition: background 0.3s;
-  }
-
-  .brand-item:hover { background: white; }
-
-  .brand-icon {
-    width: 44px; height: 44px;
-    border-radius: 50%;
-    background: var(--ink);
-    color: var(--tan);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-weight: 600;
-    flex-shrink: 0;
-  }
-
-  .brand-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 0.3rem;
-  }
-
-  .brand-use {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.82rem;
-    color: #6b4e2e;
-    line-height: 1.6;
-  }
-
-  /* ── CARE GUIDE ── */
-  .care-bg {
-    background: var(--ink);
-    padding: 6rem 0;
-  }
-
-  .care-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  .care-bg .section-label { color: var(--tan); }
-  .care-bg .section-title { color: var(--parchment); }
-
-  .care-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-
-  .care-card {
-    background: rgba(200,169,110,0.07);
-    border: 1px solid rgba(200,169,110,0.2);
-    padding: 2rem 1.5rem;
-    transition: border-color 0.3s, background 0.3s;
-  }
-
-  .care-card:hover {
-    border-color: rgba(200,169,110,0.5);
-    background: rgba(200,169,110,0.12);
-  }
-
-  .care-icon {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .care-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--tan-light);
-    margin-bottom: 0.5rem;
-  }
-
-  .care-text {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.82rem;
-    color: rgba(245,239,228,0.55);
-    line-height: 1.7;
-  }
-
-  /* ── PATINA COMPARISON ── */
-  .patina-section {
-    padding: 6rem 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .patina-track {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--tan-light);
-  }
-
-  .patina-stage {
-    background: var(--warm-white);
-    padding: 2.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: background 0.3s;
-  }
-
-  .patina-stage:hover { background: white; }
-
-  .patina-swatch {
-    width: 80px; height: 80px;
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s;
-  }
-
-  .patina-stage:hover .patina-swatch { transform: scale(1.08); }
-
-  .patina-label {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-size: 0.65rem;
-    color: var(--tan-dark);
-    margin-bottom: 0.5rem;
-  }
-
-  .patina-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 0.4rem;
-  }
-
-  .patina-desc {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.78rem;
-    color: #6b4e2e;
-    line-height: 1.6;
-  }
-
-  /* ── COMPARISON TABLE ── */
-  .compare-section {
-    background: var(--parchment);
-    padding: 6rem 0;
-  }
-
-  .compare-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-
-  .compare-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 3rem;
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-  }
-
-  .compare-table th {
-    background: var(--ink);
-    color: var(--tan-light);
-    padding: 1.1rem 1.5rem;
-    text-align: left;
-    font-weight: 400;
-    font-size: 0.82rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .compare-table th:first-child { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; text-transform: none; letter-spacing: 0; }
-
-  .compare-table td {
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--tan-light);
-    font-size: 0.875rem;
-    color: #4a2e12;
-    vertical-align: middle;
-  }
-
-  .compare-table tr:last-child td { border-bottom: none; }
-  .compare-table tr:nth-child(even) td { background: rgba(200,169,110,0.06); }
-
-  .compare-table td:first-child {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--ink);
-  }
-
-  .dot-rating {
-    display: flex;
-    gap: 4px;
-  }
-
-  .dot {
-    width: 9px; height: 9px;
-    border-radius: 50%;
-    background: var(--tan-light);
-  }
-
-  .dot.filled { background: var(--tan-dark); }
-
-  /* ── QUOTE ── */
-  .quote-section {
-    background: var(--ink);
-    padding: 6rem 2rem;
-    text-align: center;
-  }
-
-  .pull-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 300;
-    font-size: clamp(1.6rem, 3vw, 2.5rem);
-    color: var(--parchment);
-    max-width: 750px;
-    margin: 0 auto;
-    line-height: 1.5;
-  }
-
-  .pull-quote span { color: var(--tan); }
-
-  .quote-attr {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.75rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: rgba(200,169,110,0.5);
-    margin-top: 2rem;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: #100c05;
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-
-  footer p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(200,169,110,0.3);
-  }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 768px) {
-    .origin-grid, .char-grid, .tannery-cards { grid-template-columns: 1fr; }
-    .process-steps { grid-template-columns: 1fr 1fr; }
-    .process-steps::before { display: none; }
-    .brands-grid, .care-grid, .patina-track { grid-template-columns: 1fr 1fr; }
-    .nav-dots { display: none; }
-  }
-
-  @media (max-width: 500px) {
-    .brands-grid, .care-grid, .patina-track { grid-template-columns: 1fr; }
-  }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+:root {
+  --ink: #120d07; --cream: #f8f2e8; --gold: #b8924a; --gold-light: #d4b06e;
+  --gold-pale: #ede0c4; --brown: #4a2e10; --brown-mid: #7a4f28;
+  --warm-bg: #faf6ef; --dark-bg: #120d07; --mid-bg: #1e1409;
+}
+body { background: var(--warm-bg); color: var(--ink); font-family: 'Outfit', sans-serif; font-weight: 300; overflow-x: hidden; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* COVER */
+.cover { min-height: 100vh; background: var(--dark-bg); display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
+.cover-left { position: relative; background: var(--mid-bg); display: flex; flex-direction: column; justify-content: flex-end; padding: 4rem; overflow: hidden; }
+.grain-canvas { position: absolute; inset: 0; background-image: repeating-linear-gradient(23deg, transparent, transparent 2px, rgba(184,146,74,0.04) 2px, rgba(184,146,74,0.04) 3px), repeating-linear-gradient(-67deg, transparent, transparent 4px, rgba(184,146,74,0.025) 4px, rgba(184,146,74,0.025) 5px); animation: shiftgrain 12s ease-in-out infinite alternate; }
+@keyframes shiftgrain { from { background-position: 0 0, 0 0; } to { background-position: 40px 60px, -20px 30px; } }
+.leather-swatch { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(ellipse at 30% 28%, rgba(120,80,30,0.6) 0%, transparent 55%), radial-gradient(ellipse at 70% 72%, rgba(30,10,2,0.8) 0%, transparent 55%), radial-gradient(circle at 50% 50%, #2e1a08 0%, #0e0804 100%); box-shadow: inset 0 0 60px rgba(0,0,0,0.7), inset 0 2px 8px rgba(184,146,74,0.15), 0 0 80px rgba(184,146,74,0.08), 0 40px 80px rgba(0,0,0,0.6); animation: swatchpulse 8s ease-in-out infinite; }
+@keyframes swatchpulse { 0%,100% { box-shadow: inset 0 0 60px rgba(0,0,0,0.7), inset 0 2px 8px rgba(184,146,74,0.15), 0 0 80px rgba(184,146,74,0.08), 0 40px 80px rgba(0,0,0,0.6); } 50% { box-shadow: inset 0 0 60px rgba(0,0,0,0.7), inset 0 2px 8px rgba(184,146,74,0.25), 0 0 120px rgba(184,146,74,0.14), 0 40px 80px rgba(0,0,0,0.6); } }
+.cover-left-label { position: relative; z-index: 2; font-weight: 200; font-size: 0.65rem; letter-spacing: 0.45em; text-transform: uppercase; color: rgba(184,146,74,0.6); }
+.cover-right { display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 5rem; border-left: 1px solid rgba(184,146,74,0.15); }
+.cover-tag { font-weight: 300; font-size: 0.68rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 2.5rem; opacity: 0; animation: rise 0.9s 0.2s ease forwards; }
+.cover-title { font-family: 'DM Serif Display', serif; font-size: clamp(3rem, 5vw, 5.5rem); line-height: 1; color: var(--cream); letter-spacing: -0.02em; margin-bottom: 0.3em; opacity: 0; animation: rise 0.9s 0.4s ease forwards; }
+.cover-title-em { font-style: italic; color: var(--gold-light); display: block; }
+.cover-desc { font-weight: 300; font-size: 1rem; line-height: 1.8; color: rgba(248,242,232,0.5); max-width: 360px; margin-top: 2rem; opacity: 0; animation: rise 0.9s 0.6s ease forwards; }
+.cover-index { margin-top: 3.5rem; display: flex; flex-direction: column; gap: 0.6rem; opacity: 0; animation: rise 0.9s 0.8s ease forwards; }
+.index-item { display: flex; align-items: center; gap: 1rem; font-weight: 300; font-size: 0.8rem; color: rgba(248,242,232,0.4); cursor: pointer; transition: color 0.3s; text-decoration: none; }
+.index-item:hover { color: var(--gold-light); }
+.index-num { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 0.7rem; color: var(--gold); opacity: 0.7; width: 1.4rem; flex-shrink: 0; }
+.cover-line { width: 1px; height: 60px; background: linear-gradient(to bottom, var(--gold), transparent); margin-top: 3rem; opacity: 0; animation: rise 0.9s 1s ease forwards; }
+@keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* SHARED */
+.section-wrap { max-width: 1140px; margin: 0 auto; padding: 7rem 3rem; }
+.eyebrow { font-weight: 300; font-size: 0.65rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+.section-heading { font-family: 'DM Serif Display', serif; font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1.08; color: var(--ink); margin-bottom: 1.5rem; }
+.section-heading em { font-style: italic; color: var(--brown-mid); }
+.intro-text { font-size: 1.1rem; line-height: 1.9; color: var(--brown); max-width: 640px; margin-bottom: 3.5rem; }
+.dark-section { background: var(--dark-bg); }
+.dark-section .section-heading { color: var(--cream); }
+.props-section { background: var(--cream); }
+.tanning-section { background: var(--warm-bg); }
+.patina-section { background: var(--dark-bg); }
+.colour-section { background: var(--warm-bg); }
+.compare-section { background: var(--cream); }
+.care-section { background: var(--dark-bg); }
+.care-section .section-heading { color: var(--cream); }
+.section-divider { border: none; border-top: 1px solid var(--gold-pale); max-width: 1140px; margin: 0 auto; }
+
+/* SECTION I — WHAT IS IT */
+.what-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.what-body p { font-size: 1rem; line-height: 1.9; color: #3a2010; margin-bottom: 1.4rem; }
+.what-body strong { color: var(--ink); font-weight: 500; }
+.definition-box { border: 1px solid var(--gold-pale); padding: 2.5rem; background: var(--cream); position: relative; }
+.definition-box::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(to bottom, var(--gold), var(--gold-light)); }
+.def-label { font-weight: 300; font-size: 0.62rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.def-text { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 1.15rem; line-height: 1.65; color: var(--brown); }
+.spec-list { margin-top: 2rem; }
+.spec-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.85rem 0; border-bottom: 1px solid var(--gold-pale); gap: 1rem; }
+.spec-row:first-child { border-top: 1px solid var(--gold-pale); }
+.spec-key { font-size: 0.75rem; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); flex-shrink: 0; }
+.spec-val { font-family: 'Playfair Display', serif; font-size: 0.95rem; color: var(--brown); text-align: right; }
+
+/* SECTION II — SURFACE & GRAIN */
+.grain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(184,146,74,0.12); margin-top: 0.5rem; }
+.grain-card { background: #1a1008; padding: 2.5rem 2rem; transition: background 0.35s; position: relative; overflow: hidden; }
+.grain-card:hover { background: #221509; }
+.grain-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(to right, var(--gold), transparent); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+.grain-card:hover::after { transform: scaleX(1); }
+.gc-icon { font-size: 1.6rem; margin-bottom: 1.4rem; display: block; }
+.gc-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; color: var(--gold-light); margin-bottom: 0.8rem; }
+.gc-body { font-size: 0.875rem; line-height: 1.75; color: rgba(248,242,232,0.5); font-weight: 300; }
+
+/* SECTION III — PHYSICAL PROPERTIES */
+.props-layout { display: grid; grid-template-columns: 360px 1fr; gap: 6rem; align-items: start; }
+.property-visual { position: sticky; top: 4rem; }
+.prop-bars { display: flex; flex-direction: column; gap: 1.4rem; }
+.prop-bar-label { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.8rem; font-weight: 300; color: var(--brown-mid); }
+.prop-bar-track { height: 4px; background: var(--gold-pale); border-radius: 2px; overflow: hidden; }
+.prop-bar-fill { height: 100%; background: linear-gradient(to right, var(--gold), var(--gold-light)); border-radius: 2px; transform-origin: left; animation: barGrow 1.4s ease forwards; transform: scaleX(0); }
+@keyframes barGrow { to { transform: scaleX(1); } }
+.prop-bar-item:nth-child(1) .prop-bar-fill { animation-delay: 0.1s; }
+.prop-bar-item:nth-child(2) .prop-bar-fill { animation-delay: 0.2s; }
+.prop-bar-item:nth-child(3) .prop-bar-fill { animation-delay: 0.3s; }
+.prop-bar-item:nth-child(4) .prop-bar-fill { animation-delay: 0.4s; }
+.prop-bar-item:nth-child(5) .prop-bar-fill { animation-delay: 0.5s; }
+.prop-bar-item:nth-child(6) .prop-bar-fill { animation-delay: 0.6s; }
+.prop-notes { display: flex; flex-direction: column; gap: 2.5rem; }
+.prop-note { padding-left: 1.5rem; border-left: 1px solid var(--gold-pale); }
+.prop-note-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--ink); margin-bottom: 0.6rem; }
+.prop-note-body { font-size: 0.925rem; line-height: 1.85; color: var(--brown); font-weight: 300; margin-bottom: 0.8rem; }
+
+/* SECTION IV — TANNING & DYE */
+.process-flow { display: flex; gap: 0; margin-top: 3rem; position: relative; }
+.process-flow::before { content: ''; position: absolute; top: 28px; left: 28px; right: 28px; height: 1px; background: linear-gradient(to right, var(--gold-pale), var(--gold), var(--gold-pale)); z-index: 0; }
+.pf-step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 1rem; position: relative; z-index: 1; }
+.pf-node { width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--gold); background: var(--warm-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 1.1rem; color: var(--gold); transition: background 0.3s, color 0.3s; }
+.pf-step:hover .pf-node { background: var(--gold); color: var(--dark-bg); }
+.pf-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 500; color: var(--ink); margin-bottom: 0.6rem; }
+.pf-body { font-size: 0.8rem; line-height: 1.7; color: var(--brown-mid); font-weight: 300; }
+.dye-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 4rem; background: var(--gold-pale); }
+.dye-panel { padding: 3rem 2.5rem; }
+.dye-panel:first-child { background: var(--ink); }
+.dye-panel:last-child { background: var(--cream); }
+.dye-tag { font-size: 0.62rem; font-weight: 300; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.dye-title { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 1rem; }
+.dye-panel:first-child .dye-title { color: var(--cream); }
+.dye-panel:last-child .dye-title { color: var(--ink); }
+.dye-body { font-size: 0.88rem; line-height: 1.8; font-weight: 300; }
+.dye-panel:first-child .dye-body { color: rgba(248,242,232,0.55); }
+.dye-panel:last-child .dye-body { color: var(--brown); }
+.dye-verdict { display: inline-block; margin-top: 1.5rem; padding: 0.4rem 1rem; font-size: 0.68rem; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; }
+.dye-panel:first-child .dye-verdict { background: rgba(184,146,74,0.15); color: var(--gold); border: 1px solid rgba(184,146,74,0.3); }
+.dye-panel:last-child .dye-verdict { background: rgba(74,46,16,0.08); color: var(--brown); border: 1px solid var(--gold-pale); }
+
+/* SECTION V — PATINA */
+.patina-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(184,146,74,0.1); margin-top: 1rem; }
+.pt-stage { background: #160f06; padding: 2.5rem 1.8rem; display: flex; flex-direction: column; align-items: flex-start; transition: background 0.3s; }
+.pt-stage:hover { background: #1e1409; }
+.pt-swatch { width: 64px; height: 64px; border-radius: 50%; margin-bottom: 1.8rem; flex-shrink: 0; transition: transform 0.3s; }
+.pt-stage:hover .pt-swatch { transform: scale(1.08); }
+.pt-year { font-size: 0.62rem; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(184,146,74,0.5); margin-bottom: 0.5rem; }
+.pt-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--gold-light); margin-bottom: 0.8rem; }
+.pt-desc { font-size: 0.82rem; line-height: 1.7; color: rgba(248,242,232,0.45); font-weight: 300; }
+.patina-footnotes { margin-top: 3.5rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
+.pf-note { border-top: 1px solid rgba(184,146,74,0.2); padding-top: 1.5rem; }
+.pf-note-title { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold-light); margin-bottom: 0.6rem; }
+.pf-note-body { font-size: 0.82rem; line-height: 1.75; color: rgba(248,242,232,0.45); font-weight: 300; }
+
+/* SECTION VI — COLOUR */
+.colour-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin-top: 3rem; }
+.colour-card { display: flex; flex-direction: column; }
+.colour-swatch { height: 140px; border-radius: 4px 4px 0 0; transition: transform 0.3s; }
+.colour-card:hover .colour-swatch { transform: scaleY(1.04); transform-origin: bottom; }
+.colour-info { padding: 1rem 0.2rem; }
+.colour-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; color: var(--ink); margin-bottom: 0.3rem; }
+.colour-note { font-size: 0.75rem; color: var(--brown-mid); font-weight: 300; line-height: 1.5; }
+
+/* SECTION VII — COMPARISON */
+.compare-table { width: 100%; border-collapse: collapse; margin-top: 3rem; font-size: 0.875rem; }
+.compare-table thead tr { background: var(--ink); }
+.compare-table th { padding: 1rem 1.4rem; text-align: left; font-weight: 300; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); }
+.compare-table th:first-child { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 1rem; text-transform: none; letter-spacing: 0; color: var(--cream); }
+.compare-table td { padding: 0.9rem 1.4rem; border-bottom: 1px solid var(--gold-pale); color: var(--brown); vertical-align: middle; font-weight: 300; }
+.compare-table tr:nth-child(even) td { background: rgba(184,146,74,0.04); }
+.compare-table td:first-child { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--ink); }
+.compare-table tr.highlight td { background: rgba(184,146,74,0.08); }
+.pip-row { display: flex; gap: 4px; align-items: center; }
+.pip { width: 8px; height: 8px; border-radius: 50%; background: var(--gold-pale); }
+.pip.on { background: var(--gold); }
+
+/* SECTION VIII — CARE */
+.care-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(184,146,74,0.1); margin-top: 1rem; }
+.care-card { background: #160f06; padding: 2.8rem 2.5rem; transition: background 0.3s; }
+.care-card:hover { background: #1e1409; }
+.care-step { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 2.5rem; color: rgba(184,146,74,0.15); line-height: 1; margin-bottom: 1.2rem; }
+.care-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--gold-light); margin-bottom: 0.8rem; }
+.care-body { font-size: 0.875rem; line-height: 1.8; color: rgba(248,242,232,0.5); font-weight: 300; }
+.care-tip { margin-top: 1.2rem; padding: 0.8rem 1rem; background: rgba(184,146,74,0.07); border-left: 2px solid var(--gold); font-size: 0.78rem; color: rgba(184,146,74,0.7); font-weight: 300; line-height: 1.6; }
+
+/* QUOTE & FOOTER */
+.quote-band { background: var(--gold); padding: 5rem 3rem; text-align: center; }
+.quote-text { font-family: 'DM Serif Display', serif; font-style: italic; font-size: clamp(1.4rem, 2.5vw, 2rem); color: var(--dark-bg); max-width: 700px; margin: 0 auto; line-height: 1.5; }
+.quote-attr { margin-top: 1.5rem; font-size: 0.7rem; font-weight: 300; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(18,13,7,0.55); }
+footer { background: #0a0704; padding: 2.5rem 3rem; display: flex; justify-content: space-between; align-items: center; }
+.footer-brand { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 1rem; color: rgba(184,146,74,0.4); }
+.footer-note { font-size: 0.68rem; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(184,146,74,0.2); }
+
+@media (max-width: 900px) {
+  .cover { grid-template-columns: 1fr; }
+  .cover-left { min-height: 40vh; }
+  .what-grid, .props-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .grain-grid { grid-template-columns: 1fr 1fr; }
+  .process-flow { flex-wrap: wrap; }
+  .process-flow::before { display: none; }
+  .pf-step { flex: 0 0 50%; }
+  .patina-track { grid-template-columns: 1fr 1fr; }
+  .patina-footnotes { grid-template-columns: 1fr; }
+  .colour-grid { grid-template-columns: repeat(3, 1fr); }
+  .care-grid { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 1rem; text-align: center; }
+}
 </style>
 </head>
 <body>
 
-<!-- NAV DOTS -->
-<div class="nav-dots" id="navDots">
-  <div class="nav-dot active" onclick="scrollToSection(0)"></div>
-  <div class="nav-dot" onclick="scrollToSection(1)"></div>
-  <div class="nav-dot" onclick="scrollToSection(2)"></div>
-  <div class="nav-dot" onclick="scrollToSection(3)"></div>
-  <div class="nav-dot" onclick="scrollToSection(4)"></div>
-  <div class="nav-dot" onclick="scrollToSection(5)"></div>
-  <div class="nav-dot" onclick="scrollToSection(6)"></div>
-</div>
-
-<!-- HERO -->
-<div class="hero" id="sec0">
-  <div class="hero-texture"></div>
-  <div class="hero-glow"></div>
-  <p class="hero-label">A Complete Research Guide</p>
-  <h1 class="hero-title">Box <em>Calf</em><br>Leather</h1>
-  <p class="hero-sub">From Joseph Box's 19th-century workshops to the ateliers of Hermès — the story of the world's most distinguished leather.</p>
-  <div class="hero-divider"></div>
-</div>
-
-<!-- ORIGIN & HISTORY -->
-<section id="sec1">
-  <p class="section-label">Chapter I</p>
-  <h2 class="section-title">Origin &amp; <em>History</em></h2>
-  <div class="origin-grid">
-    <div>
-      <p class="body-text">Box calf leather traces its name to <strong>Joseph Box</strong>, a London shoemaker of the 19th century who pioneered a distinctive tanning and finishing process that would define luxury footwear for generations. The material became the backbone of English bespoke shoemaking — and later, the foundation of European luxury leather goods.</p>
-      <p class="body-text" style="margin-top:1.5rem;">What makes it "calf"? Calfskin, from cattle under roughly ten months old, has a finer pore structure and more supple fiber than mature cowhide — analogous, as one shoemaker put it, to comparing an eighteen-year-old's skin to a sixty-year-old's.</p>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot">1800s</div>
-        <div class="timeline-content">
-          <h4>Joseph Box, London</h4>
-          <p>English shoemaker Joseph Box popularises the tanning and glazing technique that bears his name, making it the standard for dress shoes.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot">1838</div>
-        <div class="timeline-content">
-          <h4>Tannerie d'Annonay Founded</h4>
-          <p>Etienne Meyzonnier establishes what becomes the world benchmark for box calf tannage in Annonay, Ardèche, France.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot">1872</div>
-        <div class="timeline-content">
-          <h4>Waxed Box Calf Developed</h4>
-          <p>Eugène Meyzonnier at Annonay develops the waxed calfskin technique, elevating box calf into a worldwide standard.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot">1949</div>
-        <div class="timeline-content">
-          <h4>Weinheimer Leder Founded</h4>
-          <p>German precision tannery established, inheriting the legendary Freudenberg recipes and becoming renowned particularly for black box calf.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot">2013</div>
-        <div class="timeline-content">
-          <h4>Hermès Acquires Annonay</h4>
-          <p>Hermès Cuirs Précieux acquires Tannerie d'Annonay, followed by Tanneries du Puy in 2015 — controlling the two largest French calf leather suppliers.</p>
-        </div>
-      </div>
-    </div>
+<div class="cover" id="top">
+  <div class="cover-left">
+    <div class="grain-canvas"></div>
+    <div class="leather-swatch"></div>
+    <p class="cover-left-label">Bovine · Chrome-Tanned · Full-Grain</p>
   </div>
-</section>
+  <div class="cover-right">
+    <p class="cover-tag">The Definitive Characteristics Guide</p>
+    <h1 class="cover-title">Box <span class="cover-title-em">Calf</span> Leather</h1>
+    <p class="cover-desc">An in-depth reference on the physical properties, surface, finish, dyeing, ageing behaviour, and care of the world's most distinguished leather.</p>
+    <nav class="cover-index">
+      <a class="index-item" href="#what"><span class="index-num">i</span> What Is Box Calf?</a>
+      <a class="index-item" href="#surface"><span class="index-num">ii</span> Surface &amp; Grain</a>
+      <a class="index-item" href="#properties"><span class="index-num">iii</span> Physical Properties</a>
+      <a class="index-item" href="#tanning"><span class="index-num">iv</span> Tanning &amp; Dye</a>
+      <a class="index-item" href="#patina"><span class="index-num">v</span> Patina &amp; Ageing</a>
+      <a class="index-item" href="#colour"><span class="index-num">vi</span> Colour Range</a>
+      <a class="index-item" href="#compare"><span class="index-num">vii</span> Leather Comparison</a>
+      <a class="index-item" href="#care"><span class="index-num">viii</span> Care Guide</a>
+    </nav>
+    <div class="cover-line"></div>
+  </div>
+</div>
 
-<hr class="line-divider">
-
-<!-- CHARACTERISTICS -->
-<div class="char-bg" id="sec2">
-  <div class="char-inner">
-    <p class="section-label">Chapter II</p>
-    <h2 class="section-title">Defining <em>Characteristics</em></h2>
-    <div class="char-grid">
-      <div class="char-card">
-        <div class="char-number">01</div>
-        <div class="char-title">Full-Grain Surface</div>
-        <p class="char-desc">Box calf preserves the natural surface of the hide — including its tight pore structure and subtle grain — unlike corrected-grain leathers where blemishes are sanded away. This makes it a true full-grain leather.</p>
+<!-- I — WHAT IS BOX CALF -->
+<div id="what">
+  <div class="section-wrap">
+    <p class="eyebrow">Section I</p>
+    <h2 class="section-heading">What Is <em>Box Calf?</em></h2>
+    <div class="what-grid">
+      <div class="what-body">
+        <p>Box calf is a <strong>full-grain calfskin leather</strong> — chrome-tanned, aniline-dyed through the full thickness of the hide, and finished with a smooth glazed surface that produces its characteristic semi-gloss sheen. Each word in that definition is load-bearing.</p>
+        <p><strong>Full-grain</strong> means the natural surface of the hide is entirely preserved. No sanding, no buffing, no correction. Every pore, every subtle variation in the grain pattern remains intact. This is the topmost — and most structurally dense — layer of the hide, and it is where all the durability and beauty reside.</p>
+        <p><strong>Calfskin</strong> specifically refers to hide from cattle under approximately ten months old. At this age, the collagen fibres in the hide are finer, more tightly packed, and more uniformly distributed than in adult cowhide. The pores are smaller. The surface is smoother. The grain is more refined. The structural difference is not subtle — it is the reason calfskin commands the prices it does.</p>
+        <p>The <strong>glazed finish</strong> is what distinguishes box calf from other full-grain calfskins. After tanning and dyeing, the hide is mechanically polished — historically with glass or agate cylinders — compressing the surface fibres and creating a sleek, light-reflective face. This is not a coating. It is a physical property of the leather itself.</p>
       </div>
-      <div class="char-card">
-        <div class="char-number">02</div>
-        <div class="char-title">Aniline Dyed Through</div>
-        <p class="char-desc">The hides are dyed "through and through" in rotating drums using aniline dyes. The colour penetrates deep into the fibres, producing rich, transparent tones where the natural grain remains beautifully visible.</p>
-      </div>
-      <div class="char-card">
-        <div class="char-number">03</div>
-        <div class="char-title">Glazed Finish &amp; Sheen</div>
-        <p class="char-desc">After tanning and dyeing, the leather is polished and glazed to reveal its signature semi-gloss surface. The finish ranges from a refined matte-sheen to a mirror-like lustre depending on the tannery and grade.</p>
-      </div>
-      <div class="char-card">
-        <div class="char-number">04</div>
-        <div class="char-title">Structured Yet Supple</div>
-        <p class="char-desc">Unlike soft nappa calfskin, box calf is deliberately firmer. This structure makes it ideal for shoes and bags that must hold their shape. Black box calf is traditionally the most rigid — something about the black dye compounds this stiffness.</p>
-      </div>
-      <div class="char-card">
-        <div class="char-number">05</div>
-        <div class="char-title">Patina Development</div>
-        <p class="char-desc">Over time and with regular use, box calf develops a distinguished patina unique to each owner. Layers of cream and wax polish deepen the colour and bring out richness that new leather cannot replicate.</p>
-      </div>
-      <div class="char-card">
-        <div class="char-number">06</div>
-        <div class="char-title">Alpine Hide Sourcing</div>
-        <p class="char-desc">The finest box calf hides originate from high alpine regions of Europe — particularly France and Germany — where cool climates and the absence of mosquitos and brands mean cleaner, blemish-free skins with superior grain quality.</p>
+      <div>
+        <div class="definition-box">
+          <p class="def-label">Technical Definition</p>
+          <p class="def-text">"A full-grain calfskin, chrome-tanned, aniline-dyed, and surface-glazed — characterised by fine pore structure, semi-gloss finish, and firm hand, developing a distinctive patina through sustained use."</p>
+        </div>
+        <div class="spec-list">
+          <div class="spec-row"><span class="spec-key">Animal</span><span class="spec-val">Bovine calf (under ~10 months)</span></div>
+          <div class="spec-row"><span class="spec-key">Tanning</span><span class="spec-val">Chrome (wet-blue process)</span></div>
+          <div class="spec-row"><span class="spec-key">Grain</span><span class="spec-val">Full-grain, unaltered surface</span></div>
+          <div class="spec-row"><span class="spec-key">Dye method</span><span class="spec-val">Aniline through-dyeing</span></div>
+          <div class="spec-row"><span class="spec-key">Finish</span><span class="spec-val">Mechanically glazed</span></div>
+          <div class="spec-row"><span class="spec-key">Thickness</span><span class="spec-val">0.8 – 1.2 mm (shoe upper)</span></div>
+          <div class="spec-row"><span class="spec-key">Primary use</span><span class="spec-val">Dress shoes, fine leather goods</span></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- PRODUCTION PROCESS -->
-<div class="process-bg" id="sec3">
-  <div class="process-inner">
-    <p class="section-label">Chapter III</p>
-    <h2 class="section-title">The Production <em>Process</em></h2>
-    <p class="body-text">Transforming a raw calf hide into finished box calf leather involves five carefully sequenced stages, each requiring both technical precision and artisanal judgment.</p>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-circle">I</div>
-        <div class="step-title">Beamhouse Preparation</div>
-        <p class="step-desc">Hides are cleaned, soaked, and limed to loosen hair and unwanted fibres. This stage sets the foundation for quality.</p>
+<hr class="section-divider">
+
+<!-- II — SURFACE & GRAIN -->
+<div id="surface" class="dark-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section II</p>
+    <h2 class="section-heading" style="color:var(--cream)">Surface &amp; <em style="color:var(--gold-light)">Grain</em></h2>
+    <p class="intro-text" style="color:rgba(248,242,232,0.55)">The surface of box calf is its most immediately identifiable quality — and the result of decisions made at every stage of production, from hide selection to the final glazing pass.</p>
+    <div class="grain-grid">
+      <div class="grain-card">
+        <span class="gc-icon">◉</span>
+        <p class="gc-title">Tight Pore Structure</p>
+        <p class="gc-body">The defining visual trait of calfskin is its extremely fine pore pattern. Under magnification, the pores of box calf appear small, evenly distributed, and consistently spaced — a direct result of the animal's youth and the density of collagen fibre at this stage of development. This tightness is what gives box calf its clean, almost clinical precision of surface.</p>
       </div>
-      <div class="process-step">
-        <div class="step-circle">II</div>
-        <div class="step-title">Chrome Tanning</div>
-        <p class="step-desc">Modern box calf typically uses chrome tanning — ensuring softness, moisture resistance, and structural stability while preserving fine grain.</p>
+      <div class="grain-card">
+        <span class="gc-icon">◈</span>
+        <p class="gc-title">The Glaze Layer</p>
+        <p class="gc-body">After dyeing, box calf undergoes a glazing process where the surface is mechanically compressed and polished. This physically flattens and aligns the uppermost fibres, creating a smooth, light-reflective face without any added coating. The glaze is intrinsic to the leather — which is why scratches on box calf can often be "rubbed out" by hand, because the fibres are simply being realigned.</p>
       </div>
-      <div class="process-step">
-        <div class="step-circle">III</div>
-        <div class="step-title">Wet-Blue Sorting</div>
-        <p class="step-desc">Expert artisans inspect every hide at the wet-blue stage, grading grain uniformity, absence of defects, and thickness. Only the best pass.</p>
+      <div class="grain-card">
+        <span class="gc-icon">◇</span>
+        <p class="gc-title">Visible Grain Beneath</p>
+        <p class="gc-body">Unlike pigment-finished leather where the surface is painted opaque, box calf retains complete transparency of finish. The natural grain pattern — the subtle topographic variation of the hide's surface — remains fully visible beneath the sheen. This gives the leather a three-dimensional optical depth that flat, pigmented leathers completely lack.</p>
       </div>
-      <div class="process-step">
-        <div class="step-circle">IV</div>
-        <div class="step-title">Aniline Drum Dyeing</div>
-        <p class="step-desc">Hides enter rotating drums with transparent aniline dyes that penetrate deeply — producing saturated, luminous colour that reveals rather than conceals the grain.</p>
+      <div class="grain-card">
+        <span class="gc-icon">▣</span>
+        <p class="gc-title">Sheen &amp; Light Response</p>
+        <p class="gc-body">Box calf does not have a mirror finish. The correct descriptor is "semi-gloss" — the surface reflects light but not perfectly. In direct light it gleams; in shadow it recedes to a rich, matte depth. This interplay is central to why box calf looks distinguished rather than lacquered. Black box calf, being the most heavily dyed, typically sits closer to the gloss end of this spectrum.</p>
       </div>
-      <div class="process-step">
-        <div class="step-circle">V</div>
-        <div class="step-title">Currying &amp; Glazing</div>
-        <p class="step-desc">Thickness is adjusted, the hide is softened and flattened, then polished and glazed to develop the signature sheen that defines box calf worldwide.</p>
+      <div class="grain-card">
+        <span class="gc-icon">⬡</span>
+        <p class="gc-title">Surface Sensitivity</p>
+        <p class="gc-body">Because box calf is aniline-dyed and full-grain, the surface is more sensitive to water, UV light, and abrasion than pigment-coated leathers. Water droplets can temporarily darken the surface; prolonged UV exposure causes fading. These are not defects — they are consequences of the material's porosity and the depth of dye penetration. They are also exactly what makes patina possible.</p>
+      </div>
+      <div class="grain-card">
+        <span class="gc-icon">◐</span>
+        <p class="gc-title">Hide Selection &amp; Grade</p>
+        <p class="gc-body">Because full-grain leather shows everything, hide selection for box calf is exacting. Premium tanneries source from high-alpine herds where cool climates mean fewer insect bites and brands. The grading process at the wet-blue stage filters out hides with inconsistent grain, uneven thickness, or surface damage before any dyeing begins.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- TANNERIES -->
-<section id="sec4">
-  <p class="section-label">Chapter IV</p>
-  <h2 class="section-title">The Great <em>Tanneries</em></h2>
-  <p class="body-text">Three names dominate the world of fine box calf leather, each bringing a distinct national heritage and character to the material.</p>
-  <div class="tannery-cards">
-    <div class="tannery-card">
-      <p class="tannery-flag">🇫🇷 France · Ardèche</p>
-      <h3 class="tannery-name">Tannerie d'Annonay</h3>
-      <p class="tannery-founded">Founded 1838 · Owned by Hermès since 2013</p>
-      <p class="tannery-desc">The world benchmark for box calf tannage. Located in a town where tanning has been practised since the 12th century. Annonay produces approximately two million square feet of leather annually across 110 artisans. Their "Vegano" crust calf and burnishable calfskins are coveted by patina artists worldwide. Hermès directs much of the finest hide output to John Lobb Paris and its own maison.</p>
-      <span class="tannery-badge">World Benchmark</span>
-    </div>
-    <div class="tannery-card">
-      <p class="tannery-flag">🇫🇷 France · Haute-Loire</p>
-      <h3 class="tannery-name">Tanneries du Puy</h3>
-      <p class="tannery-founded">Founded 1946 · Owned by Hermès since 2015</p>
-      <p class="tannery-desc">Certified as a French "Living Heritage Company" (EPV), Tanneries du Puy offers over 300 finishes and is particularly noted for thinner, more delicate skins that drape exquisitely. Previously owned by J.M. Weston, Hermès acquired it ensuring the two largest French luxury calf suppliers are now under one roof — though Weston retains access to prime hides.</p>
-      <span class="tannery-badge">Living Heritage Company</span>
-    </div>
-    <div class="tannery-card">
-      <p class="tannery-flag">🇩🇪 Germany · Poland (production)</p>
-      <h3 class="tannery-name">Weinheimer Leder</h3>
-      <p class="tannery-founded">Founded 1949 · Successor to Freudenberg</p>
-      <p class="tannery-desc">Weinheimer inherited all recipes from the legendary Freudenberg tannery of Weinheim — long considered the gold standard for black box calf specifically. Now produces in Poland, Weinheimer is the official supplier to numerous luxury houses for their darkest, most lustrous calfskins. Their hides are sourced from the high alpine regions where clean, brand-free skins prevail.</p>
-      <span class="tannery-badge">Black Calf Specialist</span>
-    </div>
-  </div>
-</section>
-
-<hr class="line-divider">
-
-<!-- LUXURY BRANDS -->
-<section>
-  <p class="section-label">Chapter V</p>
-  <h2 class="section-title">Where It <em>Appears</em></h2>
-  <p class="body-text">Box calf is the leather of choice for the most demanding luxury houses across footwear, small leather goods, and handbags.</p>
-  <div class="brands-grid">
-    <div class="brand-item">
-      <div class="brand-icon">H</div>
-      <div>
-        <p class="brand-name">Hermès</p>
-        <p class="brand-use">Box calf is one of Hermès' oldest leathers, used since the 1890s. The smooth, polished Birkin and Kelly bags in box calf are among the most collectible objects in luxury — prized for their dressy sheen and how they wear their history in patina and minor character marks.</p>
+<!-- III — PHYSICAL PROPERTIES -->
+<div id="properties" class="props-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section III</p>
+    <h2 class="section-heading">Physical <em>Properties</em></h2>
+    <p class="intro-text">Box calf has a distinctive hand that experienced leather workers identify immediately. Understanding its physical behaviour informs both how it performs in use and how it should be maintained.</p>
+    <div class="props-layout">
+      <div class="property-visual">
+        <div class="prop-bars">
+          <div class="prop-bar-item">
+            <div class="prop-bar-label"><span>Firmness</span><span>High</span></div>
+            <div class="prop-bar-track"><div class="prop-bar-fill" style="width:82%"></div></div>
+          </div>
+          <div class="prop-bar-item">
+            <div class="prop-bar-label"><span>Patina Potential</span><span>Very High</span></div>
+            <div class="prop-bar-track"><div class="prop-bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="prop-bar-item">
+            <div class="prop-bar-label"><span>Moisture Resistance</span><span>Moderate</span></div>
+            <div class="prop-bar-track"><div class="prop-bar-fill" style="width:55%"></div></div>
+          </div>
+          <div class="prop-bar-item">
+            <div class="prop-bar-label"><span>Scratch Recovery</span><span>Good</span></div>
+            <div class="prop-bar-track"><div class="prop-bar-fill" style="width:70%"></div></div>
+          </div>
+          <div class="prop-bar-item">
+            <div class="prop-bar-label"><span>Dye Depth</span><span>Very High</span></div>
+            <div class="prop-bar-track"><div class="prop-bar-fill" style="width:92%"></div></div>
+          </div>
+          <div class="prop-bar-item">
+            <div class="prop-bar-label"><span>Longevity</span><span>Exceptional</span></div>
+            <div class="prop-bar-track"><div class="prop-bar-fill" style="width:96%"></div></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="brand-item">
-      <div class="brand-icon">JL</div>
-      <div>
-        <p class="brand-name">John Lobb</p>
-        <p class="brand-use">The Parisian bespoke house (owned by Hermès) draws on Annonay hides directly. Box calf forms the core of their most formal dress shoes — cap-toe Oxfords and monk straps that represent the apex of English-tradition shoemaking.</p>
+      <div class="prop-notes">
+        <div class="prop-note">
+          <p class="prop-note-title">Firmness &amp; Hand</p>
+          <p class="prop-note-body">Box calf is deliberately firm. Unlike soft nappa calfskin — which drapes and folds easily — box calf holds its shape. Press a piece of box calf and it returns. Fold it and the crease is crisp rather than limp. This firmness is a consequence of the chrome tanning process and the glaze compression. It is what allows shoes made from it to hold a clean silhouette through years of wear.</p>
+          <p class="prop-note-body">Black box calf is consistently the firmest colour. There is a well-documented phenomenon in the craft: the black dye formulations add rigidity beyond that of other colours. Shoemakers working with black box calf will note the difference in resistance immediately when lasting.</p>
+        </div>
+        <div class="prop-note">
+          <p class="prop-note-title">Thickness &amp; Weight</p>
+          <p class="prop-note-body">Finished box calf for shoe uppers typically runs 0.8 to 1.2 mm. For leather goods — wallets, bag panels, straps — the range can extend to 1.5 mm. The weight is relatively light for its firmness, which is one of the reasons calfskin is preferred over cowhide for fine work: it gives structural rigidity without excessive bulk or mass.</p>
+        </div>
+        <div class="prop-note">
+          <p class="prop-note-title">Scratch Behaviour</p>
+          <p class="prop-note-body">Minor surface scratches on box calf can frequently be resolved by rubbing with a clean finger — the warmth and pressure are enough to realign displaced surface fibres. This is a direct consequence of the full-grain, glazed construction: there is no coating to flake or chip, only fibres to be compressed back into place. Deeper scratches benefit from a small application of matching cream worked in gently before buffing.</p>
+        </div>
+        <div class="prop-note">
+          <p class="prop-note-title">Moisture Behaviour</p>
+          <p class="prop-note-body">Chrome tanning gives box calf better inherent moisture resistance than vegetable-tanned leathers. However it is not waterproof. Water droplets left to sit will temporarily darken the surface. Saturation — particularly in shoes — can cause the upper to lose shape as it dries if not properly supported. The key rule: if wet, dry naturally at room temperature, never with direct heat, and always with shoe trees inserted.</p>
+        </div>
+        <div class="prop-note">
+          <p class="prop-note-title">Break-In Period</p>
+          <p class="prop-note-body">New box calf, especially in black, requires a break-in period. The leather will crease at natural flex points — the toe box in shoes, the spine of a bag — and these creases will initially appear stark and sharp. With continued use and conditioning, they soften and integrate into the overall surface. This is not damage; it is the leather beginning to conform. Patience during this period is the most important thing a new owner can offer.</p>
+        </div>
       </div>
-    </div>
-    <div class="brand-item">
-      <div class="brand-icon">EG</div>
-      <div>
-        <p class="brand-name">Edward Green</p>
-        <p class="brand-use">The Northampton institution relies on box calf for its most refined models. English shoemakers have traditionally favoured box calf's pre-dyed, uniform finish over the patina-artist leathers preferred in France and Italy.</p>
-      </div>
-    </div>
-    <div class="brand-item">
-      <div class="brand-icon">GJ</div>
-      <div>
-        <p class="brand-name">G.J. Cleverley &amp; Crockett &amp; Jones</p>
-        <p class="brand-use">Among the many Northampton and St. James's bespoke and ready-to-wear shoemakers who rely on Weinheimer black box calf as the standard for their most formal Oxfords and Derby shoes.</p>
-      </div>
-    </div>
-    <div class="brand-item">
-      <div class="brand-icon">W</div>
-      <div>
-        <p class="brand-name">J.M. Weston</p>
-        <p class="brand-use">The Limoges maison — now partly supplied by Du Puy under the Hermès arrangement — produces many of its iconic loafers and Goodyear-welted shoes using Du Puy calfskin, including box calf across their range.</p>
-      </div>
-    </div>
-    <div class="brand-item">
-      <div class="brand-icon">LV</div>
-      <div>
-        <p class="brand-name">Louis Vuitton &amp; Other Luxury Houses</p>
-        <p class="brand-use">Box calf appears across luxury maisons for wallets, cardholders, small leather goods, and watch straps where structured elegance and vibrant dye absorption are required alongside long-term durability.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PATINA JOURNEY -->
-<div class="patina-section" id="sec5">
-  <p class="section-label">Chapter VI</p>
-  <h2 class="section-title">The <em>Patina</em> Journey</h2>
-  <p class="body-text">One of box calf's most beloved qualities is how it ages. Unlike corrected-grain leather that resists change, box calf actively accumulates character over time.</p>
-  <div class="patina-track">
-    <div class="patina-stage">
-      <div class="patina-swatch" style="background: radial-gradient(circle at 35% 35%, #2a2a2a, #0d0d0d); box-shadow: 0 4px 20px rgba(0,0,0,0.3);"></div>
-      <p class="patina-label">New — Year 0</p>
-      <p class="patina-name">Factory Fresh</p>
-      <p class="patina-desc">Deep, uniform colour. High gloss from the factory finishing. Surface feels slightly stiff. Black box calf is at its most rigid here.</p>
-    </div>
-    <div class="patina-stage">
-      <div class="patina-swatch" style="background: radial-gradient(circle at 35% 35%, #3a2e1e, #1a1206); box-shadow: 0 4px 20px rgba(26,18,6,0.3);"></div>
-      <p class="patina-label">Broken In — Year 1–2</p>
-      <p class="patina-name">First Patina</p>
-      <p class="patina-desc">Subtle warmth begins to emerge. Surface softens at flex points. The first layers of cream and wax begin building depth and richness.</p>
-    </div>
-    <div class="patina-stage">
-      <div class="patina-swatch" style="background: radial-gradient(circle at 35% 35%, #5c3d1e, #2a1a08); box-shadow: 0 4px 20px rgba(42,26,8,0.3);"></div>
-      <p class="patina-label">Mature — Year 3–6</p>
-      <p class="patina-name">Rich Character</p>
-      <p class="patina-desc">The leather has fully conformed to its owner. Minor scuffs have blended in. Colours deepen at the edges and creases in a natural burnishing effect.</p>
-    </div>
-    <div class="patina-stage">
-      <div class="patina-swatch" style="background: radial-gradient(circle at 35% 35%, #9b7a42, #5c3d1e); box-shadow: 0 4px 20px rgba(92,61,30,0.3);"></div>
-      <p class="patina-label">Vintage — Year 10+</p>
-      <p class="patina-name">Heirloom Quality</p>
-      <p class="patina-desc">A true antique lustre. The surface tells the story of its years. Collectors and enthusiasts often prize old box calf pieces above new ones for exactly this reason.</p>
     </div>
   </div>
 </div>
 
-<!-- COMPARISON TABLE -->
-<div class="compare-section" id="sec6">
-  <div class="compare-inner">
-    <p class="section-label">Chapter VII</p>
-    <h2 class="section-title">How It <em>Compares</em></h2>
-    <p class="body-text">Box calf sits in a specific position in the calfskin hierarchy — more formal and structured than crust calf, more accessible than shell cordovan.</p>
+<!-- IV — TANNING & DYE -->
+<div id="tanning" class="tanning-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section IV</p>
+    <h2 class="section-heading">Tanning &amp; <em>Dye</em></h2>
+    <p class="intro-text">The processes of tanning and dyeing determine the fundamental character of box calf — its firmness, its colour depth, its surface behaviour, and its capacity to age well.</p>
+    <div class="process-flow">
+      <div class="pf-step">
+        <div class="pf-node">i</div>
+        <p class="pf-title">Beamhouse</p>
+        <p class="pf-body">Hides are soaked, unhaired, and limed. Fleshing removes subcutaneous fat. The hide is split to the desired thickness before tanning begins.</p>
+      </div>
+      <div class="pf-step">
+        <div class="pf-node">ii</div>
+        <p class="pf-title">Chrome Tanning</p>
+        <p class="pf-body">Chromium sulfate salts bind irreversibly to collagen chains. The hide exits as "wet-blue" — stable, soft, and a pale grey-blue in colour.</p>
+      </div>
+      <div class="pf-step">
+        <div class="pf-node">iii</div>
+        <p class="pf-title">Retanning &amp; Fatliquoring</p>
+        <p class="pf-body">Synthetic or vegetable retanning agents adjust softness. Oils are mechanically worked into the fibre structure to provide suppleness and lubrication.</p>
+      </div>
+      <div class="pf-step">
+        <div class="pf-node">iv</div>
+        <p class="pf-title">Aniline Dyeing</p>
+        <p class="pf-body">Hides rotate in warm drums with transparent aniline dyes for several hours. Colour penetrates the full cross-section of the hide — not just the surface.</p>
+      </div>
+      <div class="pf-step">
+        <div class="pf-node">v</div>
+        <p class="pf-title">Drying &amp; Glazing</p>
+        <p class="pf-body">Hides are dried under tension, then polished under glass or agate cylinders — compressing the grain and developing the signature sheen.</p>
+      </div>
+    </div>
+    <div class="dye-compare">
+      <div class="dye-panel">
+        <p class="dye-tag">Box Calf Uses This</p>
+        <p class="dye-title">Aniline Dyeing</p>
+        <p class="dye-body">Aniline dyes are completely soluble and transparent. They penetrate deeply into the leather's fibre structure rather than sitting on the surface. The result is a colour with genuine optical depth — you perceive it as coming from within the leather rather than being applied to it. The natural grain remains completely visible through the dye. Every variation in the hide's surface reads through the colour.</p>
+        <p class="dye-body" style="margin-top:1rem;">The trade-off is sensitivity. Because there is no opaque coating between the leather surface and the environment, aniline leather is more susceptible to water staining, UV fading, and surface marks. These characteristics are inseparable from the properties that make box calf so beautiful.</p>
+        <span class="dye-verdict">✓ Used in Box Calf</span>
+      </div>
+      <div class="dye-panel">
+        <p class="dye-tag">Box Calf Does Not Use This</p>
+        <p class="dye-title">Pigment Coating</p>
+        <p class="dye-body">Pigment finishing involves applying an opaque polymer-based colour layer to the leather surface. The natural grain is either obscured or replaced with an embossed pattern. The resulting leather is more uniform and significantly more resistant to water, UV, and abrasion.</p>
+        <p class="dye-body" style="margin-top:1rem;">However, pigment-finished leather does not develop patina in the traditional sense. The colour layer does not deepen or enrich with use — it simply wears away. What deteriorates is the coating, not the leather beneath it. This is why pigment-finished leather eventually looks worn rather than distinguished.</p>
+        <span class="dye-verdict">✗ Not used in Box Calf</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- V — PATINA -->
+<div id="patina" class="patina-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section V</p>
+    <h2 class="section-heading" style="color:var(--cream)">Patina &amp; <em style="color:var(--gold-light)">Ageing</em></h2>
+    <p class="intro-text" style="color:rgba(248,242,232,0.5)">Patina is the cumulative visual record of a material's life. In box calf, it is not deterioration — it is maturation. The leather does not degrade with age; it deepens.</p>
+    <div class="patina-track">
+      <div class="pt-stage">
+        <div class="pt-swatch" style="background: radial-gradient(circle at 32% 30%, #2e2e2e, #080808); box-shadow: 0 4px 20px rgba(0,0,0,0.5);"></div>
+        <p class="pt-year">Year 0 — New</p>
+        <p class="pt-name">Factory State</p>
+        <p class="pt-desc">Uniform, high-gloss surface from the glazing process. Colour is flat and even. The leather is at its most rigid — particularly pronounced in black. No individual character yet.</p>
+      </div>
+      <div class="pt-stage">
+        <div class="pt-swatch" style="background: radial-gradient(circle at 32% 30%, #3d3120, #100a03); box-shadow: 0 4px 20px rgba(0,0,0,0.4);"></div>
+        <p class="pt-year">Year 1–2</p>
+        <p class="pt-name">Break-In</p>
+        <p class="pt-desc">Flex creases begin forming at natural stress points. The surface acquires warmth from handling. First layers of cream and wax begin building subtle depth. The leather is starting to respond to its owner.</p>
+      </div>
+      <div class="pt-stage">
+        <div class="pt-swatch" style="background: radial-gradient(circle at 32% 30%, #6b4820, #251208); box-shadow: 0 4px 20px rgba(0,0,0,0.35);"></div>
+        <p class="pt-year">Year 3–7</p>
+        <p class="pt-name">Mature Character</p>
+        <p class="pt-desc">Natural burnishing at edges and high points. Creases have softened and blended. Minor scuffs absorbed into the overall tone. The patina layer is now visible as a depth of finish.</p>
+      </div>
+      <div class="pt-stage">
+        <div class="pt-swatch" style="background: radial-gradient(circle at 32% 30%, #a07840, #5a3215); box-shadow: 0 4px 20px rgba(0,0,0,0.3);"></div>
+        <p class="pt-year">Year 10+</p>
+        <p class="pt-name">Heirloom</p>
+        <p class="pt-desc">Genuine antique lustre. The surface has acquired a richness no new piece can possess. Colour variation across the piece tells its history. This is the state craftsmen describe with reverence.</p>
+      </div>
+    </div>
+    <div class="patina-footnotes">
+      <div class="pf-note">
+        <p class="pf-note-title">What Builds Patina</p>
+        <p class="pf-note-body">Regular use, consistent conditioning with cream, wax polishing, natural handling oils from the hand, and the gradual compression of surface fibres through contact and wear.</p>
+      </div>
+      <div class="pf-note">
+        <p class="pf-note-title">What Disrupts Patina</p>
+        <p class="pf-note-body">Alcohol-based products that strip dye, over-application of conditioner that softens the glaze, deep gouges that cannot be worked back, and neglect that allows the leather to dry and crack.</p>
+      </div>
+      <div class="pf-note">
+        <p class="pf-note-title">Colour &amp; Patina</p>
+        <p class="pf-note-body">Mid-tones — dark brown, oxblood, cognac — show the most dramatic patina development. Black box calf patinas more subtly, gaining depth and warmth without shifting in hue.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VI — COLOUR RANGE -->
+<div id="colour" class="colour-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section VI</p>
+    <h2 class="section-heading">Colour <em>Range</em></h2>
+    <p class="intro-text">Because box calf is aniline-dyed, colour choice has direct implications beyond aesthetics — it affects the leather's firmness, its starting sheen, and the character of its patina over time.</p>
+    <div class="colour-grid">
+      <div class="colour-card">
+        <div class="colour-swatch" style="background: linear-gradient(135deg, #1a1a1a 0%, #050505 100%);"></div>
+        <div class="colour-info">
+          <p class="colour-name">Black</p>
+          <p class="colour-note">Most formal and most rigid. Patinas to a warm, deep lustre. The heaviest dye load makes it the stiffest colour — requires the longest break-in.</p>
+        </div>
+      </div>
+      <div class="colour-card">
+        <div class="colour-swatch" style="background: linear-gradient(135deg, #4a1a0a 0%, #2a0c04 100%);"></div>
+        <div class="colour-info">
+          <p class="colour-name">Dark Brown</p>
+          <p class="colour-note">Versatile and dramatically beautiful as it ages. Edges burnish to a rich, deep amber over years — one of the most rewarding ageing trajectories.</p>
+        </div>
+      </div>
+      <div class="colour-card">
+        <div class="colour-swatch" style="background: linear-gradient(135deg, #6b2010 0%, #3d1008 100%);"></div>
+        <div class="colour-info">
+          <p class="colour-name">Oxblood / Burgundy</p>
+          <p class="colour-note">A complex and rewarding colour. The red-brown base shifts and deepens with age into extraordinary tonal variation. Highly sought in dress shoes.</p>
+        </div>
+      </div>
+      <div class="colour-card">
+        <div class="colour-swatch" style="background: linear-gradient(135deg, #9b5820 0%, #6b3a10 100%);"></div>
+        <div class="colour-info">
+          <p class="colour-name">Cognac / Chestnut</p>
+          <p class="colour-note">A mid-tone showing the leather's natural warmth most clearly. Patina is rich and visible from an early stage. Works across both casual and formal contexts.</p>
+        </div>
+      </div>
+      <div class="colour-card">
+        <div class="colour-swatch" style="background: linear-gradient(135deg, #c49040 0%, #9b6a20 100%);"></div>
+        <div class="colour-info">
+          <p class="colour-name">Tan / Natural</p>
+          <p class="colour-note">Lightest and most sensitive. Shows water marks most readily. Also the most dramatic in ageing — the differential between new and aged is greatest here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VII — COMPARISON -->
+<div id="compare" class="compare-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section VII</p>
+    <h2 class="section-heading">Leather <em>Comparison</em></h2>
+    <p class="intro-text">Box calf occupies a precise position in the fine leather hierarchy. Understanding how it differs from adjacent leathers clarifies when and why it is the correct choice.</p>
     <table class="compare-table">
       <thead>
         <tr>
-          <th>Leather Type</th>
-          <th>Grain</th>
-          <th>Structure</th>
+          <th>Leather</th>
+          <th>Grain Type</th>
+          <th>Firmness</th>
           <th>Patina</th>
-          <th>Scratch Resistance</th>
-          <th>Price Tier</th>
+          <th>Scratch Res.</th>
+          <th>Water Res.</th>
+          <th>Formality</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="highlight">
           <td>Box Calf</td>
-          <td>Fine, full-grain</td>
-          <td>Medium-firm</td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
-            </div>
-          </td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div>
-            </div>
-          </td>
-          <td>Premium</td>
+          <td>Full-grain</td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td>Formal</td>
         </tr>
         <tr>
           <td>Crust Calf</td>
-          <td>Natural, raw</td>
-          <td>Soft</td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
-            </div>
-          </td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-            </div>
-          </td>
-          <td>Premium</td>
-        </tr>
-        <tr>
-          <td>Corrected-Grain Calf</td>
-          <td>Sanded, uniform</td>
-          <td>Variable</td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-            </div>
-          </td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
-            </div>
-          </td>
-          <td>Mid</td>
+          <td>Full-grain, raw</td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td>Smart-casual</td>
         </tr>
         <tr>
           <td>Shell Cordovan</td>
-          <td>Dense, fibrous</td>
-          <td>Very firm</td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
-            </div>
-          </td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
-            </div>
-          </td>
-          <td>Ultra-Premium</td>
+          <td>Non-grain (fibrous)</td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td>Formal</td>
         </tr>
         <tr>
           <td>Chèvre (Goat)</td>
-          <td>Subtle grain</td>
-          <td>Light &amp; firm</td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
-            </div>
-          </td>
-          <td>
-            <div class="dot-rating">
-              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
-            </div>
-          </td>
-          <td>Premium</td>
+          <td>Full-grain, pebbled</td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td>Formal / bags</td>
+        </tr>
+        <tr>
+          <td>Nappa Calf</td>
+          <td>Full-grain, soft</td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td>Casual / fashion</td>
+        </tr>
+        <tr>
+          <td>Corrected-Grain</td>
+          <td>Sanded + embossed</td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td><div class="pip-row"><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip on"></div><div class="pip"></div></div></td>
+          <td>Any</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 
-<!-- CARE GUIDE -->
-<div class="care-bg">
-  <div class="care-inner">
-    <p class="section-label">Chapter VIII</p>
-    <h2 class="section-title">Care &amp; <em>Maintenance</em></h2>
+<!-- VIII — CARE -->
+<div id="care" class="care-section">
+  <div class="section-wrap">
+    <p class="eyebrow">Section VIII</p>
+    <h2 class="section-heading" style="color:var(--cream)">Care <em style="color:var(--gold-light)">Guide</em></h2>
+    <p class="intro-text" style="color:rgba(248,242,232,0.5)">Box calf is not fragile — but it requires consistent, considered care. The routine below is not mere maintenance; it is the mechanism by which patina is actively built.</p>
     <div class="care-grid">
       <div class="care-card">
-        <div class="care-icon">🧹</div>
-        <p class="care-title">Regular Cleaning</p>
-        <p class="care-text">Use a soft, dry cloth after every wear to remove dust. For stubborn dirt, lightly dampen the cloth — never saturate. Dry thoroughly to prevent discolouration or stiffness.</p>
+        <p class="care-step">01</p>
+        <p class="care-title">Daily — Surface Cleaning</p>
+        <p class="care-body">After each use, brush the surface with a soft horsehair brush or wipe with a clean dry cloth. This removes dust, salt crystals from sweat, and surface debris before they can work into the grain or dull the glaze. This single habit, done consistently, is more valuable than any product.</p>
+        <p class="care-tip">For dried dirt: a cloth slightly dampened with water, not saturated. Work gently and dry immediately.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">💧</div>
-        <p class="care-title">Conditioning</p>
-        <p class="care-text">Apply a quality leather cream periodically to prevent the hide from drying out. Avoid alcohol-based products which strip colour. Cream builds the patina layer essential to box calf's character.</p>
+        <p class="care-step">02</p>
+        <p class="care-title">Monthly — Conditioning</p>
+        <p class="care-body">Apply a small amount of quality leather cream — Saphir Crème Surfine is the standard reference — using a soft cloth or fingertip in circular motions. Allow to absorb for 5–10 minutes. The cream replenishes oils that evaporate over time, keeping the fibre structure supple and preventing the surface from becoming brittle or cracking at flex points.</p>
+        <p class="care-tip">Avoid silicone, petroleum, and alcohol-based products. These degrade the dye and break down the leather's natural oils irreversibly.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">✨</div>
-        <p class="care-title">Wax Polishing</p>
-        <p class="care-text">Follow cream conditioning with a quality wax polish to restore and deepen the glazed sheen. Buff gently in circular motions with a horsehair brush for best results.</p>
+        <p class="care-step">03</p>
+        <p class="care-title">Monthly — Wax Polish</p>
+        <p class="care-body">After conditioning, apply a thin coat of matching wax polish. Work into the surface in small circular strokes, allow to dry to a haze, then buff vigorously with a clean horsehair brush. This is the step that actively builds the patina layer — each application deposits a thin film of wax that deepens and enriches the surface over time.</p>
+        <p class="care-tip">High-shine mirror shine is possible on box calf using water and wax. It is beautiful but hides the natural grain — a matter of personal preference.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">🌧️</div>
-        <p class="care-title">Moisture Management</p>
-        <p class="care-text">Chrome-tanned box calf has natural moisture resistance, but avoid saturation. If wet, allow to dry naturally at room temperature — never apply direct heat. Use shoe trees in footwear to retain form.</p>
+        <p class="care-step">04</p>
+        <p class="care-title">Storage &amp; Humidity</p>
+        <p class="care-body">Store box calf away from direct sunlight — UV fades aniline dyes over time. For shoes, always use cedar shoe trees when not worn: they absorb moisture, maintain the shape of the upper, and allow the leather to dry uniformly. In very dry climates, increase conditioning frequency. In humid climates, ensure good airflow to prevent mould — a white haze on the surface.</p>
+        <p class="care-tip">Mould on leather: brush off dry, clean with a 1:1 water/isopropyl alcohol solution, condition immediately after drying.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- PULL QUOTE -->
-<div class="quote-section">
-  <p class="pull-quote">"Box calf will always be stiffer due to the dyeing process — and Black box calf will traditionally be the most rigid. <span>Something about the black dye makes it harder than the rest.</span>"</p>
-  <p class="quote-attr">— Justin FitzPatrick, The Shoe Snob</p>
+<div class="quote-band">
+  <p class="quote-text">"The great irony of the finest materials is that they become more valuable the more you use them. Box calf is perhaps the purest expression of that idea."</p>
+  <p class="quote-attr">Box Calf Leather · The Definitive Characteristics Guide · 2026</p>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  <p>Box Calf Leather — Research Guide &nbsp;·&nbsp; Sources: Tannerie d'Annonay, Weinheimer Leder, The Shoe Snob, Privé Porter, Shoegazing &nbsp;·&nbsp; Compiled 2026</p>
+  <span class="footer-brand">Box Calf Leather</span>
+  <span class="footer-note">Sources: Tannerie d'Annonay · Weinheimer Leder · The Shoe Snob · Shoegazing · Compiled 2026</span>
 </footer>
 
-<script>
-  const sections = ['sec0','sec1','sec2','sec3','sec4','sec5','sec6'];
-
-  function scrollToSection(i) {
-    document.getElementById(sections[i]).scrollIntoView({ behavior: 'smooth' });
-  }
-
-  // Update active nav dot on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const idx = sections.indexOf(entry.target.id);
-        if (idx !== -1) {
-          document.querySelectorAll('.nav-dot').forEach((d,i) => {
-            d.classList.toggle('active', i === idx);
-          });
-        }
-      }
-    });
-  }, { threshold: 0.4 });
-
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) observer.observe(el);
-  });
-</script>
 </body>
 </html>
